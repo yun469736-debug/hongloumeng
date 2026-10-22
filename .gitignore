@@ -1,0 +1,23 @@
+__pycache__/
+*.log
+*.py[cod]
+.idea/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Download model weights locally; they exceed GitHub's file size limit.
+bge_model/*.bin
+bge_model/*.safetensors
+
+# Frontend build and dependency outputs
+frontend/node_modules/
+frontend/dist/
+frontend/frontend/
+frontend/*.tsbuildinfo
+
+# Superseded local portrait copies; the app uses characters-webp.
+frontend/public/assets/characters/
+frontend/public/assets/cutouts/
